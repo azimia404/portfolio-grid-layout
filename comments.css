@@ -1,0 +1,301 @@
+﻿
+#comments .page-header {
+	background-image: url(img/banner_11.jpg);
+}
+
+.comment-list-classic {
+	list-style: none;
+}
+
+	.comment-list-classic .comment-lvl-2 {
+		padding-left: 20%;
+	}
+
+	.comment-list-classic .comment-lvl-1 {
+		padding-left: 10%;
+	}
+
+	.comment-list-classic > li + li {
+		margin-top: 2rem;
+	}
+
+	.comment-list-classic .comment {
+		position: relative;
+		min-height: 9.5rem;
+		padding: 1rem;
+		border-top: 1px solid var(--gray-c);
+		overflow: hidden;
+		transition: all 0.2s linear;
+	}
+
+	.comment-list-classic .comment-avatar-wrapper {
+		position: relative;
+		width: 15%;
+		height: 0;
+		padding-bottom: 15%;
+		float: left;
+	}
+
+	.comment-list-classic .comment-avatar {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-bottom-left-radius: 25%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.comment-list-classic .comment-text-wrapper {
+		width: calc(85% - 1rem);
+		margin-left: 1rem;
+		padding-bottom: 2rem;
+		float: left;
+		overflow: hidden;
+	}
+
+	.comment-list-classic .comment-header {
+		overflow: hidden;
+	}
+
+	.comment-list-classic .comment-title {
+		width: 50%;
+		padding: 0;
+		float: left;
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		text-align: left;
+		text-transform: capitalize;
+		color: var(--prima);
+	}
+
+	.comment-list-classic .comment-time {
+		float: right;
+		font-family: var(--secondary-font);
+		font-size: 0.7rem;
+		line-height: 1rem;
+		text-align: right;
+		white-space: pre-line;
+		color: var(--gray-9);
+	}
+
+	.comment-list-classic .comment-para {
+		margin-top: 1rem;
+		font-family: var(--secondary-font);
+		color: var(--gray-6);
+		font-weight: 300;
+		line-height: 1.25rem;
+		font-size: 0.9rem;
+	}
+
+	.comment-list-classic .comment-footer {
+		position: absolute;
+		bottom: 1rem;
+	}
+
+	.comment-list-classic .comment-likes, .comment-list-classic .comment-dislikes {
+		display: block;
+		margin-right: 1rem;
+		float: left;
+		font-family: var(--secondary-font);
+		text-align: left;
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+
+		.comment-list-classic .comment-likes:before, .comment-list-classic .comment-dislikes:before {
+			margin-right: 0.35rem;
+			cursor: pointer;
+			transition: color 0.15s linear;
+		}
+
+		.comment-list-classic .comment-likes:hover:before, .comment-list-classic .comment-dislikes:hover:before {
+			color: var(--gray-3)
+		}
+
+		.comment-list-classic .comment-likes:before {
+			color: var(--prima)
+		}
+
+		.comment-list-classic .comment-dislikes:before {
+			color: var(--accent-3)
+		}
+
+	.comment-list-classic .comment-reply {
+		display: block;
+		padding: 0 1rem;
+		border-left: 0.1rem solid var(--gray-c);
+		float: left;
+		font-family: var(--secondary-font);
+		font-size: 0.8rem;
+		line-height: 1rem;
+		color: var(--prima);
+		cursor: pointer;
+		transition: color 0.15s linear;
+	}
+
+	.comment-list-classic .comment .comment-reply:hover {
+		color: var(--gray-3);
+	}
+
+	.comment-list-classic .comment:hover {
+		background-color: var(--white);
+		box-shadow: inset 0 0.5rem 0.5rem -0.5rem rgb(0, 0, 0, 0.2), 0 0.6rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
+	}
+
+	.comment-list-classic .comment-thread:not(:first-child) .comment {
+		margin-top: 2rem;
+	}
+
+	.comment-list-classic > li[class*="comment-lvl-"]:before {
+		content: "";
+		display: block;
+		width: 1rem;
+		margin-top: 5%;
+		margin-left: -1.5rem;
+		padding-bottom: calc(5% - 0.2rem);
+		border-left: 0.2rem solid var(--prima);
+		border-bottom: 0.2rem solid var(--prima);
+		border-bottom-left-radius: 0.5rem;
+		float: left;
+	}
+
+.comment-list-balloon {
+	list-style: none;
+}
+
+	.comment-list-balloon .comment-lvl-2 {
+		padding-left: 20%;
+	}
+
+	.comment-list-balloon .comment-lvl-1 {
+		padding-left: 10%;
+	}
+
+	.comment-list-balloon .comment {
+		position: relative;
+		padding-bottom: 2rem;
+	}
+
+	.comment-list-balloon .comment-avatar-wrapper {
+		position: relative;
+		margin-left: 2rem;
+		padding-left: 0.5rem;
+		padding-bottom: 0.5rem;
+		border-bottom-left-radius: 2rem;
+		float: left;
+		background-color: var(--smoke);
+	}
+
+		.comment-list-balloon .comment-avatar-wrapper:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: var(--prima);
+		}
+
+	.comment-list-balloon .comment-avatar {
+		display: block;
+		width: 5rem;
+		height: 5rem;
+		border: 0.2rem solid var(--prima);
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.comment-list-balloon .comment-header {
+		margin-left: 1rem;
+		padding: 0.5rem 0;
+		float: left;
+	}
+
+	.comment-list-balloon .comment-title {
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		line-height: 1.5rem;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	.comment-list-balloon .comment-time {
+		display: block;
+		margin-top: 0.5rem;
+		white-space: pre-line;
+		font-family: var(--primary-font);
+		color: var(--gray-9);
+		line-height: 1rem;
+	}
+
+	.comment-list-balloon .comment-para {
+		padding: 1rem;
+		border-radius: 1rem;
+		clear: both;
+		font-family: var(--secondary-font);
+		font-weight: 300;
+		line-height: 1.4rem;
+		text-align: justify;
+		background-color: var(--prima);
+		color: var( --gray-f7);
+		box-shadow: 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.5);
+	}
+
+	.comment-list-balloon .comment-footer {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.comment-list-balloon .comment .comment-likes, .comment-list-balloon .comment-dislikes {
+		display: block;
+		margin-right: 1rem;
+		float: left;
+		font-family: var(--secondary-font);
+		text-align: left;
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+
+		.comment-list-balloon .comment-likes:before, .comment-list-balloon .comment-dislikes:before {
+			margin-right: 0.35rem;
+			cursor: pointer;
+			transition: color 0.15s linear;
+		}
+
+		.comment-list-balloon .comment-likes:hover:before, .comment-list-balloon .comment-dislikes:hover:before {
+			color: var(--gray-3)
+		}
+
+	.comment-list-balloon .comment-likes:before {
+		color: var(--prima)
+	}
+
+	.comment-list-balloon .comment-dislikes:before {
+		color: var(--accent-3)
+	}
+
+	.comment-list-balloon .comment-reply {
+		display: block;
+		padding: 0 1rem;
+		border-left: 0.1rem solid var(--gray-c);
+		float: left;
+		font-family: var(--secondary-font);
+		font-size: 0.8rem;
+		line-height: 1rem;
+		color: var(--prima);
+		cursor: pointer;
+		transition: color 0.15s linear;
+	}
+
+	.comment-list-balloon .comment .comment-reply:hover {
+		color: var(--gray-3);
+	}

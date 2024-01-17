@@ -1,0 +1,569 @@
+﻿
+#vcards .page-header {
+	background-image: url('img/banner_09.jpg');
+}
+
+#vcards .vcard-example-list {
+	list-style: none;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.vcard-round {
+	cursor: pointer;
+}
+
+	.vcard-round .vcard-image-wrapper {
+		z-index: 1;
+		isolation: isolate;
+		width: calc(50% + 1rem);
+		margin: auto;
+		padding: 0.5rem;
+		padding-bottom: 1rem;
+		border-radius: 50%;
+		background-color: var(--smoke);
+	}
+
+	.vcard-round .vcard-image {
+		display: block;
+		width: 100%;
+		height: 0;
+		margin-bottom: -0.5rem;
+		padding-top: calc(100% - 0.4rem);
+		border: 0.2rem solid transparent;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+		background-origin: padding-box;
+		background-clip: padding-box;
+		transition: all 0.3s linear;
+	}
+
+	.vcard-round .vcard-text {
+		padding-top: 30%;
+		padding-bottom: 5%;
+		margin-top: -25%;
+		text-align: center;
+		background-color: var(--gray-e);
+	}
+
+	.vcard-round .vcard-title {
+		padding: 0;
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		line-height: 1.5rem;
+		font-weight: 500;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--gray-3)
+	}
+
+	.vcard-round .vcard-extra {
+		display: block;
+		margin-top: 0.1rem;
+		font-family: var(--secondary-font);
+		font-size: 0.85rem;
+		line-height: 1.15rem;
+		color: var(--prima);
+	}
+
+	.vcard-round .vcard-phone-number {
+		display: block;
+		margin-top: 2%;
+		font-family: var(--primary-font);
+		letter-spacing: 0.05em;
+	}
+
+	.vcard-round:hover .vcard-image {
+		margin-top: -0.5rem;
+		margin-bottom: 0rem;
+		border-color: var(--prima);
+	}
+
+.vcard-ribbon {
+	position: relative;
+	cursor: pointer;
+}
+
+	.vcard-ribbon .vcard-phone-number {
+		display: none;
+	}
+
+	.vcard-ribbon .vcard-image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-top: 100%;
+		background-size: cover;
+		background-position: center;
+		filter: grayscale(1);
+		transition: filter 0.2s ease-out;
+	}
+
+	.vcard-ribbon .vcard-text {
+		position: absolute;
+		left: 0;
+		bottom: 10%;
+		padding: 0.5rem 1rem;
+		background-color: rgba(0, 0, 0, 0.5);
+		background-clip: padding-box;
+		transition: padding-left 0.2s ease-out;
+	}
+
+		.vcard-ribbon .vcard-text:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -1rem;
+			display: block;
+			border-right: 1rem solid transparent;
+			border-bottom: 3.5rem solid rgba(0, 0, 0, 0.5);
+		}
+
+	.vcard-ribbon .vcard-title {
+		padding: 0;
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		line-height: 1.5rem;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--white);
+	}
+
+	.vcard-ribbon .vcard-extra {
+		display: block;
+		font-family: var(--secondary-font);
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1rem;
+		color: var(--prima);
+	}
+
+	.vcard-ribbon:hover .vcard-text {
+		padding-left: 2rem;
+	}
+
+	.vcard-ribbon:hover .vcard-image {
+		filter: grayscale(0);
+	}
+
+.vcard-lined {
+	cursor: pointer;
+}
+
+	.vcard-lined .vcard-phone-number {
+		display: none;
+	}
+
+	.vcard-lined .vcard-image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-top: 100%;
+		background-size: 100%;
+		background-position: center;
+		transition: background-size 0.4s linear;
+	}
+
+	.vcard-lined .vcard-text {
+		position: relative;
+		margin-top: 1rem;
+		overflow: hidden;
+	}
+
+		.vcard-lined .vcard-text:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 0.1rem;
+			margin-top: 0.4rem;
+			float: left;
+			background-image: linear-gradient(to right, var(--gray-6) 50%, var(--prima) 0);
+			background-size: 200%;
+			background-position-x: 0%;
+			transition: background-position-x 0.1s linear 0.2s;
+		}
+
+		.vcard-lined .vcard-text:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 0.1rem solid var(--prima);
+			border-left: 0.1rem solid var(--prima);
+			transition: height 0.1s linear 0.1s, width 0.1s linear;
+		}
+
+	.vcard-lined .vcard-title {
+		margin-left: 0.25rem;
+		padding: 0;
+		float: left;
+		font-family: var(--primary-font);
+		font-size: 1rem;
+		line-height: 1rem;
+		letter-spacing: 0.05em;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: var(--gray-3);
+		transition: all 0.1s linear;
+	}
+
+	.vcard-lined .vcard-extra {
+		display: block;
+		float: right;
+		font-family: var(--primary-font);
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		line-height: 1rem;
+		color: var(--gray-9);
+		transition: color 0.4s linear;
+	}
+
+	.vcard-lined:hover .vcard-title {
+		margin-left: 1.25rem;
+		color: var(--prima);
+		transition: all 0.1s linear 0.2s;
+	}
+
+	.vcard-lined:hover .vcard-extra {
+		color: var(--gray-3);
+	}
+
+	.vcard-lined:hover .vcard-image {
+		background-size: 120%;
+	}
+
+	.vcard-lined:hover .vcard-text:after {
+		background-position-x: 100%;
+		transition: background-position-x 0.1s linear;
+	}
+
+	.vcard-lined:hover .vcard-text:before {
+		width: 1rem;
+		height: 1rem;
+		transition: height 0.1s linear 0.1s, width 0.1s linear 0.2s;
+	}
+
+
+.vcard-panel {
+	box-shadow: 0 0 1rem -0.5rem rgb(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: box-shadow 0.2s linear;
+}
+
+	.vcard-panel .vcard-phone-number {
+		display: none;
+	}
+
+	.vcard-panel .vcard-image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-top: 100%;
+		background-size: 150%;
+		background-position: center 20%;
+		filter: grayscale(0.5);
+		transition: all 0.2s linear;
+	}
+
+	.vcard-panel .vcard-text {
+		position: relative;
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
+		text-align: center;
+		transition: all 0.2s linear;
+	}
+
+		.vcard-panel .vcard-text:before {
+			position: absolute;
+			left: calc((100% - 1.7rem) / 2);
+			top: -0.5rem;
+			content: "";
+			display: block;
+			width: 1.7rem;
+			height: 1rem;
+			line-height: 1rem;
+			margin: auto;
+			border-top-left-radius: 1rem;
+			border-top-right-radius: 1rem;
+			font-family: 'Font Awesome 5 Pro';
+			font-size: 0.5rem;
+			background-color: white;
+			color: var(--accent-3);
+			transition: all 0.2s linear;
+		}
+
+	.vcard-panel .vcard-title {
+		padding: 0;
+		font-family: var(--primary-font);
+		font-size: 1.2rem;
+		line-height: 1rem;
+		letter-spacing: 0.05em;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: var(--gray-3);
+		transition: color 0.2s linear;
+	}
+
+	.vcard-panel .vcard-extra {
+		display: block;
+		font-family: var(--primary-font);
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		line-height: 1rem;
+		color: var(--prima);
+		transition: color 0.2s linear;
+	}
+
+	.vcard-panel:hover {
+		box-shadow: 0 0.3rem 1rem -0.3rem rgb(0, 0, 0, 0.5);
+	}
+
+		.vcard-panel:hover .vcard-text {
+			background-color: var(--prima);
+			box-shadow: 0 -0.5rem 1.5rem -0.5rem black;
+		}
+
+			.vcard-panel:hover .vcard-text:before {
+				content: "";
+				background-color: var(--prima);
+				color: var(--white);
+			}
+
+		.vcard-panel:hover .vcard-title, .vcard-panel:hover .vcard-extra {
+			color: var(--white);
+		}
+
+		.vcard-panel:hover .vcard-image {
+			background-size: 120%;
+			background-position-y: 0%;
+			filter: grayscale(0);
+		}
+
+	.vcard-panel:active {
+		box-shadow: 0 0 0 0 transparent;
+	}
+
+
+.vcard-fluent {
+	padding: 0.5rem;
+	padding-bottom: 10%;
+	cursor: pointer;
+	background-color: var(--gray-3);
+}
+
+	.vcard-fluent .vcard-phone-number {
+		display: none;
+	}
+
+	.vcard-fluent .vcard-image-wrapper {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.vcard-fluent .vcard-image-decoration {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+		background-position: center;
+		background-size: 150%;
+		filter: blur(1rem) contrast(0.75);
+	}
+
+	.vcard-fluent .vcard-image {
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		display: block;
+		height: 0;
+		width: 50%;
+		padding-top: 50%;
+		border-radius: 50%;
+		background-size: cover;
+		isolation: isolate;
+		z-index: 1;
+		transition: all 0.2s ease-out;
+	}
+
+	.vcard-fluent .vcard-image-wrapper:before {
+		content: "";
+		position: absolute;
+		top: 20%;
+		bottom: 20%;
+		left: 20%;
+		right: 20%;
+		display: block;
+		border-radius: 50%;
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent 20% 80%, rgba(255, 255, 255, 0.5));
+		z-index: 1;
+		transition: all 0.2s ease-out;
+	}
+
+	.vcard-fluent .vcard-image-wrapper:after {
+		content: "";
+		position: absolute;
+		top: 15%;
+		bottom: 15%;
+		left: 15%;
+		right: 15%;
+		display: block;
+		border-radius: 50%;
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent 30% 70%, rgba(255, 255, 255, 0.5));
+		z-index: 1;
+		transition: all 0.2s ease-out;
+	}
+
+	.vcard-fluent .vcard-text {
+		position: relative;
+		padding-top: 20%;
+		text-align: center;
+		transition: all 0.2s linear;
+	}
+
+	.vcard-fluent .vcard-title {
+		position: absolute;
+		top: 20%;
+		width: 100%;
+		font-family: var(--primary-font);
+		font-size: 1.4rem;
+		line-height: 1rem;
+		letter-spacing: 0.05em;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: var(--white);
+		transition: top 0.2s linear;
+	}
+
+	.vcard-fluent .vcard-extra {
+		display: block;
+		font-family: var(--secondary-font);
+		font-size: 0.85rem;
+		font-weight: 400;
+		line-height: 1rem;
+		color: var(--prima);
+	}
+
+	.vcard-fluent:hover .vcard-image {
+		left: 20%;
+		top: 20%;
+		width: 60%;
+		padding-top: 60%;
+	}
+
+	.vcard-fluent:hover .vcard-image-wrapper:before {
+		top: 12.5%;
+		bottom: 12.5%;
+		left: 12.5%;
+		right: 12.5%;
+	}
+
+	.vcard-fluent:hover .vcard-image-wrapper:after {
+		top: 5%;
+		bottom: 5%;
+		left: 5%;
+		right: 5%;
+	}
+
+
+	.vcard-fluent:hover .vcard-title {
+		top: 30%
+	}
+
+
+.vcard-gloss {
+	position: relative;
+	padding-top: 1.9rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+	.vcard-gloss .vcard-phone-number {
+		display: none;
+	}
+
+	.vcard-gloss .vcard-image-wrapper {
+		position: relative;
+		bottom: 0;
+		width: 80%;
+		margin-left: auto;
+		box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, 0.5);
+		filter: grayscale(0.8);
+		transition: all 0.3s linear;
+	}
+
+		.vcard-gloss .vcard-image-wrapper:before {
+			content: "";
+			position: absolute;
+			top: -100%;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient( -45deg, transparent, rgba(255, 255, 255, 0.5) 45% 55%, transparent);
+			transition: all 0.3s ease-out;
+		}
+
+	.vcard-gloss .vcard-image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 135%;
+		background-position: center;
+		background-size: cover;
+		transition: all 0.3s linear;
+	}
+
+	.vcard-gloss .vcard-text {
+		position: absolute;
+		top: 0.25rem;
+		left: 0;
+		text-align: left;
+		text-shadow: 0 0.05rem 0 var(--white), 0.05rem 0.05rem 0 var(--gray-6);
+		transition: top 0.3s ease-out;
+	}
+
+	.vcard-gloss .vcard-title {
+		font-family: var(--secondary-font);
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+		letter-spacing: 0.05em;
+		font-weight: 500;
+		text-transform: uppercase;
+		white-space: pre-line;
+		color: var(--gray-3);
+	}
+
+	.vcard-gloss .vcard-extra {
+		display: block;
+		font-family: var(--secondary-font);
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1rem;
+		color: var(--gray-3);
+	}
+
+	.vcard-gloss:hover .vcard-text {
+		top: 0;
+	}
+
+	.vcard-gloss:hover .vcard-image-wrapper {
+		bottom: -0.25rem;
+		box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.5);
+		filter: grayscale(0);
+	}
+
+		.vcard-gloss:hover .vcard-image-wrapper:before {
+			top: 100%;
+			left: 100%;
+		}

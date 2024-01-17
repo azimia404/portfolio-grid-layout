@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta charset="utf-8" />
+	<link href="main.css" type="text/css" rel="stylesheet" />
+	<link href="menu.css" type="text/css" rel="stylesheet" />
+	<link href="grid.css" type="text/css" rel="stylesheet" />
+	<link href="typography.css" type="text/css" rel="stylesheet" />
+	<link href="elements.css" type="text/css" rel="stylesheet" />
+	<title>Layout Positions</title>
+</head>
+<body>
+<nav class="navigation">
+	<div class="navigation-panel">
+		<a class="home-page-link" href="#">Positions</a>
+		<ul class="navigation-list">
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="home.html#home">Home</a>
+			</li>
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="elements.html#elements">Elements</a>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Components
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="counters.html#counters">Counters</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="component_thumbs.html#component-thumbs">Thumbs</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="cards.html#cards">Cards</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="vcards.html#vcards">vCards</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="reviews.html#reviews">Reviews</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="comments.html#comments">Comments</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="time_line.html#time-line">Time Line</a>
+				</li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Systems
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="layout_grid.html#layout-grid">Layout Grid</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="typography.html#typography">Typography</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="fonts.html#fonts">Fonts</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="colors.html#colors">Colors</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Gallery
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="gallery_thumbs.html#gallery-thumbs">Thumbs</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="grid_view.html#grid-view">Grid View</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="masonry_view.html#masonry-view">Masonry View</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Blog
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="blog_thumbs.html#blog-thumbs">Thumbs</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="list_view.html#list-view">List View</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="single_post.html#single-post">Single Post</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="#">Coming Soon</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<main class="page-main">
+<section id="layout-grid" class="page">
+	<div class="page-visibility">
+		<header class="page-header">
+			<h1 class="page-header-title">Layout Grid</h1>
+			<div class="guide">
+				<a class="guide-link" href="#home">Home</a>
+				<span class="guide-step">Systems</span>
+				<span class="guide-step">Layout Grid</span>
+			</div>
+		</header>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Space Evenly</h2>
+			</header>
+			<div class="grid space-evenly grid-example">
+				<div class="cell col-12 no-lmarg new-line">1/1</div>
+				<div class="cell col-6 no-lmarg">1/2</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-4 no-lmarg">1/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-8 no-lmarg">2/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-4 no-lmarg">1/3</div>
+				<div class="cell col-8">2/3</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-6 no-lmarg">1/2</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-9 no-lmarg">3/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-9">3/4</div>
+				<div class="cell col-2 no-lmarg">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-1 no-lmarg">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Space Between</h2>
+			</header>
+			<div class="grid space-between grid-example">
+				<div class="cell col-12 no-lmarg new-line">1/1</div>
+				<div class="cell col-6 no-lmarg">1/2</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-4 no-lmarg">1/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-8 no-lmarg">2/3</div>
+				<div class="cell col-4">1/3</div>
+				<div class="cell col-4 no-lmarg">1/3</div>
+				<div class="cell col-8">2/3</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-6 no-lmarg">1/2</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-6">1/2</div>
+				<div class="cell col-9 no-lmarg">3/4</div>
+				<div class="cell col-3">1/4</div>
+				<div class="cell col-3 no-lmarg">1/4</div>
+				<div class="cell col-9">3/4</div>
+				<div class="cell col-2 no-lmarg">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-2">1/6</div>
+				<div class="cell col-1 no-lmarg">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+				<div class="cell col-1">1/12</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Nested Grids - Evenly</h2>
+			</header>
+			<div class="grid space-evenly grid-example">
+				<div class="cell col-8 no-lmarg new-line">
+					8
+						<div class="grid space-evenly">
+							<div class="cell col-4 no-lmarg">
+								4
+								<div class="grid space-evenly">
+									<div class="cell col-2 no-lmarg">
+										2
+									</div>
+									<div class="cell col-2">
+										2
+									</div>
+								</div>
+							</div>
+							<div class="cell col-4">
+								4
+								<div class="grid space-evenly">
+									<div class="cell col-3 no-lmarg">
+										3
+									</div>
+									<div class="cell col-1">
+										1
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="cell col-4">
+					4
+					<div class="grid space-evenly">
+						<div class="cell col-2 no-lmarg">
+							2
+							<div class="grid space-evenly">
+								<div class="cell col-2 no-lmarg">
+									2
+								</div>
+							</div>
+						</div>
+						<div class="cell col-2">
+							2
+							<div class="grid space-evenly">
+								<div class="cell col-1 no-lmarg">
+									1
+								</div>
+								<div class="cell col-1">
+									1
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Nested Grids - Between</h2>
+			</header>
+			<div class="grid space-between grid-example">
+				<div class="cell col-8 no-lmarg new-line">
+					8
+						<div class="grid space-between">
+							<div class="cell col-4 no-lmarg">
+								4
+								<div class="grid space-between">
+									<div class="cell col-2 no-lmarg">
+										2
+									</div>
+									<div class="cell col-2">
+										2
+									</div>
+								</div>
+							</div>
+							<div class="cell col-4">
+								4
+								<div class="grid space-between">
+									<div class="cell col-3 no-lmarg">
+										3
+									</div>
+									<div class="cell col-1">
+										1
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="cell col-4">
+					4
+					<div class="grid space-between">
+						<div class="cell col-2 no-lmarg">
+							2
+							<div class="grid space-between">
+								<div class="cell col-2 no-lmarg">
+									2
+								</div>
+							</div>
+						</div>
+						<div class="cell col-2">
+							2
+							<div class="grid space-between">
+								<div class="cell col-1 no-lmarg">
+									1
+								</div>
+								<div class="cell col-1">
+									1
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Right Space</h2>
+			</header>
+			<div class="grid space-evenly grid-example">
+				<div class="cell spr-11 col-1 no-lmarg new-line">11</div>
+				<div class="cell spr-10 col-2 no-lmarg">10</div>
+				<div class="cell spr-9 col-3 no-lmarg">9</div>
+				<div class="cell spr-8 col-4 no-lmarg">8</div>
+				<div class="cell spr-7 col-5 no-lmarg">7</div>
+				<div class="cell spr-6 col-6 no-lmarg">6</div>
+				<div class="cell spr-5 col-7 no-lmarg">5</div>
+				<div class="cell spr-4 col-8 no-lmarg">4</div>
+				<div class="cell spr-3 col-9 no-lmarg">3</div>
+				<div class="cell spr-2 col-10 no-lmarg">2</div>
+				<div class="cell spr-1 col-11 no-lmarg">1</div>
+				<div class="cell col-12 no-lmarg">0</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Left Space</h2>
+			</header>
+			<div class="grid space-evenly grid-example">
+				<div class="cell spl-11 col-1 no-lmarg new-line">11</div>
+				<div class="cell spl-10 col-2 no-lmarg">10</div>
+				<div class="cell spl-9 col-3 no-lmarg">9</div>
+				<div class="cell spl-8 col-4 no-lmarg">8</div>
+				<div class="cell spl-7 col-5 no-lmarg">7</div>
+				<div class="cell spl-6 col-6 no-lmarg">6</div>
+				<div class="cell spl-5 col-7 no-lmarg">5</div>
+				<div class="cell spl-4 col-8 no-lmarg">4</div>
+				<div class="cell spl-3 col-9 no-lmarg">3</div>
+				<div class="cell spl-2 col-10 no-lmarg">2</div>
+				<div class="cell spl-1 col-11 no-lmarg">1</div>
+				<div class="cell col-12 no-lmarg">0</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Mix Space</h2>
+			</header>
+			<div class="grid space-evenly grid-example">
+				<div class="cell col-1 no-lmarg new-line">1</div>
+				<div class="cell col-1 spr-1">1</div>
+				<div class="cell col-2">2</div>
+				<div class="cell col-3 spr-3">3</div>
+				<div class="cell col-1">1</div>
+				<div class="cell col-2 spr-3 no-lmarg">2</div>
+				<div class="cell col-2 spr-3">2</div>
+				<div class="cell col-2">2</div>
+				<div class="cell col-3 spr-4 no-lmarg">3</div>
+				<div class="cell col-5">5</div>
+				<div class="cell col-4 spl-4">4</div>
+				<div class="cell col-4">4</div>
+				<div class="cell col-2 spl-1">2</div>
+				<div class="cell col-2 spr-4">2</div>
+				<div class="cell col-2 spr-1">2</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Ratio 1 ×</h2>
+			</header>
+			<div class="grid space-evenly ratio-grid grid-example">
+				<div class="cell col-1 ratio-1 no-lmarg new-line">
+					1 × 1
+				</div>
+				<div class="cell col-1 ratio-2">
+					1 × 2
+				</div>
+				<div class="cell col-1 ratio-3">
+					1 × 3
+				</div>
+				<div class="cell col-1 ratio-4">
+					1 × 4
+				</div>
+				<div class="cell col-1 ratio-5">
+					1 × 5
+				</div>
+				<div class="cell col-1 ratio-6">
+					1 × 6
+				</div>
+				<div class="cell col-1 ratio-7">
+					1 × 7
+				</div>
+				<div class="cell col-1 ratio-8">
+					1 × 8
+				</div>
+				<div class="cell col-1 ratio-9">
+					1 × 9
+				</div>
+				<div class="cell col-1 ratio-10">
+					1 × 10
+				</div>
+				<div class="cell col-1 ratio-11">
+					1 × 11
+				</div>
+				<div class="cell col-1 ratio-12">
+					1 × 12
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Ratio 2 ×</h2>
+			</header>
+			<div class="grid space-evenly ratio-grid grid-example">
+				<div class="cell col-2 ratio-1 no-lmarg new-line">
+					2 × 1
+				</div>
+				<div class="cell col-2 ratio-2">
+					2 × 2
+				</div>
+				<div class="cell col-2 ratio-3">
+					2 × 3
+				</div>
+				<div class="cell col-2 ratio-4">
+					2 × 4
+				</div>
+				<div class="cell col-2 ratio-5">
+					2 × 5
+				</div>
+				<div class="cell col-2 ratio-6">
+					2 × 6
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Ratio 3 ×</h2>
+			</header>
+			<div class="grid space-evenly ratio-grid grid-example">
+				<div class="cell col-3 ratio-1 no-lmarg new-line">
+					3 × 1
+				</div>
+				<div class="cell col-3 ratio-2">
+					3 × 2
+				</div>
+				<div class="cell col-3 ratio-3">
+					3 × 3
+				</div>
+				<div class="cell col-3 ratio-4">
+					3 × 4
+				</div>
+				<div class="cell col-3 ratio-5 no-lmarg">
+					3 × 5
+				</div>
+				<div class="cell col-3 ratio-6">
+					3 × 6
+				</div>
+				<div class="cell col-3 ratio-7">
+					3 × 6
+				</div>
+				<div class="cell col-3 ratio-8">
+					3 × 6
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<header class="page-section-header">
+				<h2 class="page-section-title">Ratio 4 ×</h2>
+			</header>
+			<div class="grid space-evenly ratio-grid grid-example">
+				<div class="cell col-4 ratio-1 no-lmarg new-line">
+					4 × 1
+				</div>
+				<div class="cell col-4 ratio-2">
+					4 × 2
+				</div>
+				<div class="cell col-4 ratio-3">
+					4 × 3
+				</div>
+				<div class="cell col-4 ratio-4 no-lmarg">
+					4 × 4
+				</div>
+				<div class="cell col-4 ratio-5">
+					4 × 5
+				</div>
+				<div class="cell col-4 ratio-6">
+					4 × 6
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+</main>
+<footer id="page-footer">
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Contacts</h3>
+		<p class="para">Etiam congue, mi quis dapibus porttitor, orci magna interdum magna, sit amet accumsan massa diam eu mauris.</p>
+		<address class="page-footer-address">
+			<dl>
+				<dt>Address</dt>
+				<dd>4730 Crystal Springs Dr, Los Angeles, CA 90027</dd>
+				<dt>Phones</dt>
+				<dd>+1 323-913-4688</dd>
+				<dt>E-Mails</dt>
+				<dd>info@demolink.org</dd>
+			</dl>
+		</address>
+	</section>
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Questions?</h3>
+		<div class="message-form">Name</div>
+		<div class="message-form">E-mail</div>
+		<div class="message-form" id="message">Message</div>
+		<div class="button button-filled button-prima button-normal">Send</div>
+	</section>
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Nunc Nulla</h3>
+		<ul class="arrows-link-list arrows-link-menu">
+			<li class="arrow-link arrow-link-green">Donec</li>
+			<li class="arrow-link arrow-link-green">In Ultricies</li>
+			<li class="arrow-link arrow-link-green">Maecenas</li>
+			<li class="arrow-link arrow-link-green">Condimentum</li>
+			<li class="arrow-link arrow-link-green">Pulvinar</li>
+			<li class="arrow-link arrow-link-green">Vestibulum</li>
+		</ul>
+	</section>
+</footer>
+<div class="loader-wrapper">
+	<div class="loader">
+		<div class="loader-item red"></div>
+		<div class="loader-item yellow"></div>
+		<div class="loader-item green"></div>
+		<div class="loader-item blue"></div>
+	</div>
+</div>
+<script> </script>
+</body>
+</html>

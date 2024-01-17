@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta charset="utf-8" />
+	<link href="main.css" type="text/css" rel="stylesheet" />
+	<link href="menu.css" type="text/css" rel="stylesheet" />
+	<link href="grid.css" type="text/css" rel="stylesheet" />
+	<link href="typography.css" type="text/css" rel="stylesheet" />
+	<link href="elements.css" type="text/css" rel="stylesheet" />
+	<link href="counters.css" type="text/css" rel="stylesheet" />
+	<link href="component_thumbs.css" type="text/css" rel="stylesheet" />
+	<link href="cards.css" type="text/css" rel="stylesheet" />
+	<link href="comments.css" type="text/css" rel="stylesheet" />
+	<link href="gallery.css" type="text/css" rel="stylesheet" />
+	<link href="blog.css" type="text/css" rel="stylesheet" />
+	<title>Layout Positions</title>
+</head>
+<body>
+<nav class="navigation">
+	<div class="navigation-panel">
+		<a class="home-page-link" href="#">Positions</a>
+		<ul class="navigation-list">
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="home.html#home">Home</a>
+			</li>
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="elements.html#elements">Elements</a>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Components
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="counters.html#counters">Counters</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="component_thumbs.html#component-thumbs">Thumbs</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="cards.html#cards">Cards</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="vcards.html#vcards">vCards</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="reviews.html#reviews">Reviews</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="comments.html#comments">Comments</a>
+				</li>
+				<li class="navigation-drop-out-item">
+					<a class="navigation-drop-out-link" href="time_line.html#time-line">Time Line</a>
+				</li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Systems
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="layout_grid.html#layout-grid">Layout Grid</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="typography.html#typography">Typography</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="fonts.html#fonts">Fonts</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="colors.html#colors">Colors</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Gallery
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="gallery_thumbs.html#gallery-thumbs">Thumbs</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="grid_view.html#grid-view">Grid View</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="masonry_view.html#masonry-view">Masonry View</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item drop-out-wrapper">
+				Blog
+			<ul class="navigation-drop-out-list">
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="blog_thumbs.html#blog-thumbs">Thumbs</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="list_view.html#list-view">List View</a></li>
+				<li class="navigation-drop-out-item"><a class="navigation-drop-out-link" href="single_post.html#single-post">Single Post</a></li>
+			</ul>
+			</li>
+			<li class="navigation-item">
+				<a class="navigation-item-link" href="#">Coming Soon</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<main class="page-main">
+<section id="list-view" class="page">
+	<div class="page-visibility ">
+		<header class="page-header">
+			<h1 class="page-header-title">List View</h1>
+			<div class="guide">
+				<a class="guide-link" href="#home">Home</a>
+				<span class="guide-step">Blog</span>
+				<span class="guide-step">List</span>
+			</div>
+		</header>
+		<section class="page-section grid">
+			<section class="cell col-7 no-lmarg">
+				<ul class="thumbs-list ">
+					<li class="blog-thumb-framed no-lmarg">
+						<header class="blog-thumb-header">
+							<img class="blog-thumb-header-avatar" src="img/avatar_01.jpg" />
+							<h4 class="blog-thumb-header-title">Ryan Wilson</h4>
+							<div class="blog-thumb-header-extra">Founder, Designer</div>
+						</header>
+						<img class="blog-thumb-image" src="img/gallery_01.jpg" />
+						<h3 class="blog-thumb-title">Pellentesque Efficitur</h3>
+						<footer class="blog-thumb-footer">
+							<time class="blog-thumb-date" datetime="2020-01-06">6 January 2020</time>
+							<div class="blog-thumb-comment-count far fa-comments-alt">4</div>
+							<div class="rating rating-normal">
+								<ul class="rating-list">
+									<li class="rating-star fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+								</ul>
+								<span class="rating-number">4.0</span>
+							</div>
+						</footer>
+						<p class="blog-thumb-para">Pellentesque efficitur, nisl vel bibendum rutrum, leo enim tempor leo, vel fringilla magna quam sed nisi. Nam cursus tincidunt metus, in mattis metus bibendum ac. Fusce vitae purus tortor. Pellentesque malesuada ac neque sit amet volutpat. Nullam lobortis dignissim leo, condimentum dictum erat faucibus in. Mauris sed viverra dui. Proin maximus eleifend auctor. Cras vitae efficitur urna, cursus tristique massa. Suspendisse orci turpis, posuere sit amet molestie vitae, facilisis sit amet magna. Nunc dolor tortor, porttitor at risus ut, accumsan pulvinar lorem. Sed condimentum neque purus, venenatis mollis augue viverra sit amet.</p>
+						<div class="blog-thumb-content">
+							<a href="single_post.html#single-post" class="button button-filled button-prima button-normal">Read More</a>
+						</div>
+					</li>
+					<li class="blog-thumb-framed">
+						<header class="blog-thumb-header">
+							<img class="blog-thumb-header-avatar" src="img/avatar_02.jpg" />
+							<h4 class="blog-thumb-header-title">Jill Peterson</h4>
+							<div class="blog-thumb-header-extra">Architect</div>
+						</header>
+						<img class="blog-thumb-image" src="img/gallery_02.jpg" />
+						<h3 class="blog-thumb-title">Cras Tempor Eu Ipsum Eget Molestie</h3>
+						<footer class="blog-thumb-footer">
+							<time class="blog-thumb-date" datetime="2020-02-28">28 February 2020</time>
+							<div class="blog-thumb-comment-count far fa-comments-alt">10</div>
+							<div class="rating rating-normal">
+								<ul class="rating-list">
+									<li class="rating-star rating-star-half fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+								</ul>
+								<span class="rating-number">4.5</span>
+							</div>
+						</footer>
+						<p class="blog-thumb-para">Quisque id varius ligula. Vivamus ut luctus mi. Nullam luctus leo eget nisi feugiat volutpat. Vivamus eleifend maximus ultricies. Aenean ornare risus at erat volutpat, eget egestas lorem egestas. Aliquam nisi purus, suscipit ac feugiat in, consectetur quis ex. Mauris eget luctus mi, ac elementum ex. Ut eu tempor orci.</p>
+						<div class="blog-thumb-content">
+							<a href="single_post.html#single-post" class="button button-filled button-prima button-normal">Read More</a>
+						</div>
+					</li>
+					<li class="blog-thumb-framed">
+						<header class="blog-thumb-header">
+							<img class="blog-thumb-header-avatar" src="img/avatar_03.jpg" />
+							<h4 class="blog-thumb-header-title">Sam Robinson</h4>
+							<div class="blog-thumb-header-extra">Senior Architect</div>
+						</header>
+						<img class="blog-thumb-image" src="img/gallery_03.jpg" />
+						<h3 class="blog-thumb-title">Nullam Mollis Ipsum Nec Risus Sagittis, Non Facilisis Ligula Lobortis.</h3>
+						<footer class="blog-thumb-footer">
+							<time class="blog-thumb-date" datetime="2020-03-19">19 March 2020</time>
+							<div class="blog-thumb-comment-count far fa-comments-alt">8</div>
+							<div class="rating rating-normal">
+								<ul class="rating-list">
+									<li class="rating-star rating-star fas fa-star"></li>
+									<li class="rating-star rating-star-half fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+								</ul>
+								<span class="rating-number">3.5</span>
+							</div>
+						</footer>
+						<p class="blog-thumb-para">Aenean id odio velit. Morbi feugiat facilisis tortor, a cursus odio. In et nibh mauris. In at libero odio. Cras non laoreet mauris. Phasellus accumsan nec magna et laoreet. Fusce dapibus imperdiet ante, nec ullamcorper purus vehicula lacinia. Cras quis neque sit amet sapien aliquam volutpat.</p>
+						<div class="blog-thumb-content">
+							<a href="single_post.html#single-post" class="button button-filled button-prima button-normal">Read More</a>
+						</div>
+					</li>
+					<li class="blog-thumb-framed">
+						<header class="blog-thumb-header">
+							<img class="blog-thumb-header-avatar" src="img/avatar_04.jpg" />
+							<h4 class="blog-thumb-header-title">Ann Anderson</h4>
+							<div class="blog-thumb-header-extra">Junior Designer</div>
+						</header>
+						<img class="blog-thumb-image" src="img/gallery_04.jpg" />
+						<h3 class="blog-thumb-title">Cras Tempor Eu Ipsum Eget Molestie</h3>
+						<footer class="blog-thumb-footer">
+							<time class="blog-thumb-date" datetime="2020-03-25">25 March 2020</time>
+							<div class="blog-thumb-comment-count far fa-comments-alt">10</div>
+							<div class="rating rating-normal">
+								<ul class="rating-list">
+									<li class="rating-star rating-star-half fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+								</ul>
+								<span class="rating-number">4.5</span>
+							</div>
+						</footer>
+						<p class="blog-thumb-para">In hac habitasse platea dictumst. Donec ac purus nec arcu tincidunt dignissim. Suspendisse ac ultrices mauris. Vivamus mattis venenatis ornare. Nam auctor lectus non nibh pretium ornare. Cras porta ac tellus sed vulputate. In condimentum odio malesuada ante accumsan vehicula. Integer sit amet rhoncus odio. Nam augue sapien, malesuada sit amet convallis quis, blandit sit amet nisi. Nam nulla diam, dapibus consequat rutrum eget, laoreet eu lorem. Ut eu pharetra tortor. Nam ut dignissim arcu, nec imperdiet lorem. Nulla vulputate tincidunt bibendum. Nullam posuere molestie vehicula.</p>
+						<div class="blog-thumb-content">
+							<a href="single_post.html#single-post" class="button button-filled button-prima button-normal">Read More</a>
+						</div>
+					</li>
+					<li class="blog-thumb-framed">
+						<header class="blog-thumb-header">
+							<img class="blog-thumb-header-avatar" src="img/avatar_09.jpg" />
+							<h4 class="blog-thumb-header-title">Julia Lavoi</h4>
+							<div class="blog-thumb-header-extra">Architect</div>
+						</header>
+						<img class="blog-thumb-image" src="img/gallery_09.jpg" />
+						<h3 class="blog-thumb-title">Quisque Tempus Lorem Quis Quam Vulputate, Vitae Gravida Nisi Cursus</h3>
+						<footer class="blog-thumb-footer">
+							<time class="blog-thumb-date" datetime="2020-04-11">11 April 2020</time>
+							<div class="blog-thumb-comment-count far fa-comments-alt">18</div>
+							<div class="rating rating-normal">
+								<ul class="rating-list">
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+									<li class="rating-star rating-star-filled fas fa-star"></li>
+								</ul>
+								<span class="rating-number">5.0</span>
+							</div>
+						</footer>
+						<p class="blog-thumb-para">Donec hendrerit aliquet neque, vitae ultrices orci aliquet a. Quisque convallis bibendum nibh eget convallis. Curabitur feugiat, quam eget scelerisque dignissim, urna mauris lobortis enim, sit amet pharetra risus erat id nisi. Donec ut sem at purus molestie tincidunt. Donec vitae cursus risus. Sed ut eleifend nulla. Integer lectus tortor, euismod et euismod at, volutpat in magna. Aliquam fringilla risus dui. Etiam ligula orci, porta sit amet tortor a, malesuada eleifend augue. Praesent pretium malesuada est ac lobortis. Fusce massa leo, laoreet a lacinia nec, dignissim vitae tellus.</p>
+						<div class="blog-thumb-content">
+							<a href="single_post.html#single-post" class="button button-filled button-prima button-normal">Read More</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<aside class="cell col-5 cards-list-titled">
+				<div class="card">
+					<header class="card-header">
+						<h5 class="page-h5">Categories</h5>
+					</header>
+					<ul class="arrows-link-list arrows-link-menu">
+						<li class="arrow-link arrow-link-green">Phasellus</li>
+						<li class="arrow-link arrow-link-green">In Ultricies</li>
+						<li class="arrow-link arrow-link-green">Donec Vel</li>
+						<li class="arrow-link arrow-link-green">Aliquam Condimentum</li>
+						<li class="arrow-link arrow-link-green">Curabitur Pulvinar</li>
+						<li class="arrow-link arrow-link-green">Vestibulum</li>
+					</ul>
+				</div>
+				<div class="card">
+					<header class="card-header">
+						<h5 class="page-h5">Categories</h5>
+					</header>
+					<ul class="comment-list-classic">
+						<li class="comment-thread">
+							<article class="comment">
+								<div class="comment-avatar-wrapper"><img class="comment-avatar" src="img/avatar_08.jpg" style="background-image: url(img/avatar_08.jpg)" /></div>
+
+								<div class="comment-text-wrapper">
+									<header class="comment-header">
+										<h4 class="comment-title">Modi Tempora</h4>
+										<time class="comment-time">Wednesday
+25 March 2020</time>
+									</header>
+									<p class="comment-para">Integer blandit finibus tortor ut vulputate. Morbi volutpat dolor porttitor feugiat semper. Fusce tincidunt bibendum massa nec venenatis. Quisque nec finibus purus. Nam et purus tincidunt, luctus mauris vitae, elementum leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tristique massa sit amet faucibus.</p>
+									<footer class="comment-footer">
+										<span class="comment-likes fas fa-thumbs-up">8</span>
+										<span class="comment-dislikes fas fa-thumbs-down">0</span>
+										<span class="comment-reply">reply</span>
+									</footer>
+								</div>
+							</article>
+						</li>
+						<li class="comment-thread">
+							<article class="comment">
+								<div class="comment-avatar-wrapper"><img class="comment-avatar" src="img/avatar_07.jpg" style="background-image: url(img/avatar_07.jpg)" /></div>
+
+								<div class="comment-text-wrapper">
+									<header class="comment-header">
+										<h4 class="comment-title">Catherine Williams</h4>
+										<time class="comment-time">Monday
+6 January 2020</time>
+									</header>
+									<p class="comment-para">Duis sed aliquet augue, vel lobortis dui. Integer fermentum leo mi, eu varius libero sodales vel. Vestibulum facilisis tortor dolor, a faucibus augue ornare eget. Interdum et malesuada fames ac ante.</p>
+									<footer class="comment-footer">
+										<span class="comment-likes fas fa-thumbs-up">5</span>
+										<span class="comment-dislikes fas fa-thumbs-down">2</span>
+										<span class="comment-reply">reply</span>
+									</footer>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<header class="card-header">
+						<h5 class="page-h5">Trends</h5>
+					</header>
+					<ul class="progress-bar-list">
+						<li>
+							<header>
+								<h5 class="progress-bar-title">Nullam Elementum</h5>
+							</header>
+							<div class="progress-bar progress-bar-green">
+								<div class="progress-bar-complete" style="width: 28%"></div>
+								<span class="progress-bar-indicator">28</span>
+							</div>
+						</li>
+						<li>
+							<header>
+								<h5 class="progress-bar-title">Fusce Quis Libero Iaculis</h5>
+							</header>
+							<div class="progress-bar progress-bar-yellow">
+								<div class="progress-bar-complete" style="width: 45%"></div>
+								<span class="progress-bar-indicator">45</span>
+							</div>
+						</li>
+						<li>
+							<header>
+								<h5 class="progress-bar-title">Sed Non Erat</h5>
+							</header>
+							<div class="progress-bar progress-bar-blue">
+								<div class="progress-bar-complete" style="width: 10%"></div>
+								<span class="progress-bar-indicator">10</span>
+							</div>
+						</li>
+						<li>
+							<header>
+								<h5 class="progress-bar-title">Morbi Nec Dui In Lectus</h5>
+							</header>
+							<div class="progress-bar progress-bar-red">
+								<div class="progress-bar-complete" style="width: 73%"></div>
+								<span class="progress-bar-indicator">73</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<header class="card-header">
+						<h5 class="page-h5">Popular Posts</h5>
+					</header>
+					<ul class="component-thumbs-list ">
+						<li class="component-thumb-modern">
+							<div class="component-thumb-image-wrapper">
+								<img class="component-thumb-image" src="img/gallery_13.jpg" />
+							</div>
+							<div class="component-thumb-text">
+								<div class="component-thumb-text-title">Mauris</div>
+								<p class="component-thumb-text-para">Duis pretium tellus nunc, nec venenatis dolor ornare nec.</p>
+							</div>
+						</li>
+						<li class="component-thumb-modern">
+							<div class="component-thumb-image-wrapper">
+								<img class="component-thumb-image" src="img/gallery_14.jpg" />
+							</div>
+							<div class="component-thumb-text">
+								<div class="component-thumb-text-title">Aptent</div>
+								<p class="component-thumb-text-para">Sed elit est, pharetra a sem sed, efficitur hendrerit neque.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<header class="card-header">
+						<h5 class="page-h5">Popular tags</h5>
+					</header>
+					<ul class="tags-list">
+						<li class="tag tag-left tag-prima">
+							neque sit amet
+						</li>
+						<li class="tag tag-left tag-prima">
+							lobortis
+						</li>
+						<li class="tag tag-left tag-prima">
+							luctus
+						</li>
+						<li class="tag tag-left tag-prima">
+							nisi
+						</li>
+						<li class="tag tag-left tag-prima">
+							dignissim leo
+						</li>
+						<li class="tag tag-left tag-prima">
+							cursus
+						</li>
+						<li class="tag tag-left tag-prima">
+							mi
+						</li>
+						<li class="tag tag-left tag-prima">
+							accumsan
+						</li>
+						<li class="tag tag-left tag-prima">
+							venenatis molli
+						</li>
+						<li class="tag tag-left tag-prima">
+							dolor
+						</li>
+						<li class="tag tag-left tag-prima">
+							suscipit ac
+						</li>
+					</ul>
+				</div>
+				<div class="card grid">
+					<header class="card-header">
+						<h5 class="page-h5">In Our Gallery</h5>
+					</header>
+					<div class="cell col-2 ratio-7 gallery-thumb-classic no-lmarg">
+						<img class="gallery-thumb-image" src="img/gallery_31.jpg" />
+					</div>
+					<div class="cell col-3 ratio-4 gallery-thumb-classic">
+						<img class="gallery-thumb-image" src="img/gallery_34.jpg" />
+					</div>
+					<div class="cell col-2 ratio-3 new-line gallery-thumb-classic">
+						<img class="gallery-thumb-image" src="img/gallery_03.jpg" />
+					</div>
+					<div class="cell col-1 ratio-3 gallery-thumb-classic">
+						<img class="gallery-thumb-image" src="img/gallery_16.jpg" />
+					</div>
+					<div class="cell col-12 ratio-3 no-lmarg gallery-thumb-classic">
+						<img class="gallery-thumb-image" src="img/gallery_20.jpg" />
+					</div>
+				</div>
+			</aside>
+			<footer class="cell col-12 no-lmarg">
+				<ul class="pagination pagination-round pagination-green">
+					<li class="pagination-item far fa-chevron-left"></li>
+					<li class="pagination-item">1</li>
+					<li class="pagination-item far fa-ellipsis-h"></li>
+					<li class="pagination-item">5</li>
+					<li class="pagination-item current">6</li>
+					<li class="pagination-item">7</li>
+					<li class="pagination-item">8</li>
+					<li class="pagination-item">9</li>
+					<li class="pagination-item far fa-ellipsis-h"></li>
+					<li class="pagination-item">15</li>
+					<li class="pagination-item far fa-chevron-right"></li>
+				</ul>
+			</footer>
+		</section>
+	</div>
+</section>
+</main>
+<footer id="page-footer">
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Contacts</h3>
+		<p class="para">Etiam congue, mi quis dapibus porttitor, orci magna interdum magna, sit amet accumsan massa diam eu mauris.</p>
+		<address class="page-footer-address">
+			<dl>
+				<dt>Address</dt>
+				<dd>4730 Crystal Springs Dr, Los Angeles, CA 90027</dd>
+				<dt>Phones</dt>
+				<dd>+1 323-913-4688</dd>
+				<dt>E-Mails</dt>
+				<dd>info@demolink.org</dd>
+			</dl>
+		</address>
+	</section>
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Questions?</h3>
+		<div class="message-form">Name</div>
+		<div class="message-form">E-mail</div>
+		<div class="message-form" id="message">Message</div>
+		<div class="button button-filled button-prima button-normal">Send</div>
+	</section>
+	<section class="page-footer-section">
+		<h3 class="page-footer-title">Nunc Nulla</h3>
+		<ul class="arrows-link-list arrows-link-menu">
+			<li class="arrow-link arrow-link-green">Donec</li>
+			<li class="arrow-link arrow-link-green">In Ultricies</li>
+			<li class="arrow-link arrow-link-green">Maecenas</li>
+			<li class="arrow-link arrow-link-green">Condimentum</li>
+			<li class="arrow-link arrow-link-green">Pulvinar</li>
+			<li class="arrow-link arrow-link-green">Vestibulum</li>
+		</ul>
+	</section>
+</footer>
+<div class="loader-wrapper">
+	<div class="loader">
+		<div class="loader-item red"></div>
+		<div class="loader-item yellow"></div>
+		<div class="loader-item green"></div>
+		<div class="loader-item blue"></div>
+	</div>
+</div>
+<script> </script>
+</body>
+</html>

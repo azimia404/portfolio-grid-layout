@@ -1,0 +1,202 @@
+﻿
+
+#cards .page-header {
+	background-image: url(img/banner_08.jpg);
+}
+
+.cards-list-simple {
+	margin: -1rem;
+	padding: 1rem;
+	list-style: none;
+	overflow: hidden;
+}
+
+	.cards-list-simple .card {
+		position: relative;
+		height: 11.2rem;
+		padding: 2rem;
+		padding-left: 4rem;
+		outline: 1px solid var(--gray-c);
+		outline-offset: -0.5rem;
+		background-color: var(--white);
+		cursor: pointer;
+		transition: all 0.2s linear;
+	}
+
+		.cards-list-simple .card .card-header {
+			overflow: hidden;
+		}
+
+		.cards-list-simple .card .page-h5 {
+			padding: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 1.2rem;
+			transition: color 0.2s linear;
+		}
+
+		.cards-list-simple .card:before {
+			position: absolute;
+			display: inline-block;
+			left: 1.5rem;
+			width: 2rem;
+			text-align: center;
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+			color: var(--prima);
+		}
+
+		.cards-list-simple .card .card-para-wrapper {
+			height: 5rem;
+			margin-top: 1rem;
+			overflow: hidden;
+		}
+
+		.cards-list-simple .card .card-para {
+			font-family: var(--secondary-font);
+			font-size: 0.85rem;
+			text-align: justify;
+			color: var(--gray-9);
+		}
+
+		.cards-list-simple .card:hover {
+			outline-offset: -0.8rem;
+			box-shadow: 0 0 0.5rem -0.3rem black;
+		}
+
+			.cards-list-simple .card:hover .page-h5 {
+				color: var(--prima);
+			}
+
+.cards-list-numeric {
+	margin: -1rem;
+	padding: 1rem;
+	list-style: none;
+	overflow: hidden;
+}
+
+	.cards-list-numeric .card {
+		position: relative;
+		height: 13.2rem;
+		padding: 2rem;
+		padding-top: 4rem;
+		background-image: linear-gradient(to right, var(--white) calc(100% - 2.5rem), transparent 0), linear-gradient(to top, var(--white) calc(100% - 3rem), transparent 0);
+		cursor: pointer;
+		transition: box-shadow 0.2s linear;
+	}
+
+		.cards-list-numeric .card .card-header {
+			overflow: hidden;
+		}
+
+		.cards-list-numeric .card .page-h5 {
+			padding: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 1.2rem;
+		}
+
+		.cards-list-numeric .card:before {
+			position: absolute;
+			top: 1.5rem;
+			display: block;
+			width: 2rem;
+			text-align: center;
+			font-size: 1.6rem;
+			line-height: 1rem;
+			color: var(--prima);
+		}
+
+		.cards-list-numeric .card:after {
+			content: "01";
+			position: absolute;
+			right: 0;
+			top: 0.5rem;
+			width: 2rem;
+			text-align: center;
+			font-family: var(--primary-font);
+			font-size: 2rem;
+			font-weight: 500;
+			color: var(--gray-9);
+			transition: top 0.2s linear;
+		}
+
+		.cards-list-numeric .card .card-para-wrapper {
+			height: 5rem;
+			margin-top: 1rem;
+			overflow: hidden;
+		}
+
+		.cards-list-numeric .card .card-para {
+			font-family: var(--secondary-font);
+			font-size: 0.85rem;
+			text-align: justify;
+			color: var(--gray-9);
+		}
+
+		.cards-list-numeric .card:hover {
+			box-shadow: 0 0.3rem 0.5rem -0.3rem rgba(0, 0, 0, 0.3);
+		}
+
+			.cards-list-numeric .card:hover:after {
+				top: 0;
+			}
+
+#cards .cards-list-titled .card {
+	height: 9rem;
+}
+
+.cards-list-titled {
+	list-style: none;
+	overflow: hidden;
+}
+
+	.cards-list-titled .card {
+		position: relative;
+		padding: 1rem;
+		padding-top: 3rem;
+		background-color: var(--gray-e);
+		cursor: pointer;
+		transition: box-shadow 0.2s linear;
+	}
+
+		.cards-list-titled .card .card-header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0.5rem 1rem;
+			overflow: hidden;
+			background-color: var(--white);
+		}
+
+		.cards-list-titled .card .page-h5 {
+			padding: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 1.5rem;
+			transition: all 0.2s linear;
+		}
+
+		.cards-list-titled .card .card-para-wrapper {
+			height: 5rem;
+			overflow: hidden;
+		}
+
+		.cards-list-titled .card .card-para {
+			font-family: var(--secondary-font);
+			font-size: 0.85rem;
+			text-align: justify;
+			color: var(--gray-6);
+		}
+
+		.cards-list-titled .card:hover {
+			box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.3);
+		}
+
+			.cards-list-titled .card:hover .page-h5 {
+				letter-spacing: 0.1em;
+				color: var(--prima);
+			}
